@@ -1,0 +1,11 @@
+# This file is managed by Conan, contents will be overwritten.
+# To keep your changes, remove these comment lines, but the plugin won't be able to modify your requirements
+
+requirements:
+  - "openssl/3.2.1"
+  - "zlib/1.3.1"
+sources:
+  "1.8.25":
+    url: https://github.com/tdlib/td/archive/fe6201556b8a1c0bdd4f9b25027d294d6efd6eba.zip
+    sha256: 67eceb00b14a024c0a29ae3e0b5e4d6bbdb1cafa4f4b57ff38165cb4804dcb0b
+    strip_root: true
