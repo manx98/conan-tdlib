@@ -101,7 +101,7 @@ class TDLibRecipe(ConanFile):
                 self.cpp_info.components[conan_component].libs = [comp_name]
             self.cpp_info.components[conan_component].requires = requires
         if self.settings.os == "Windows":
-            mswsock = "Mswsock" if is_msvc(self) else "Mswsock"
+            mswsock = "Mswsock" if is_msvc(self) else "mswsock"
             crypt32 = "Crypt32" if is_msvc(self) else "crypt32"
             self.cpp_info.components["td_tdutils"].system_libs.extend([crypt32, "ws2_32", mswsock, "Normaliz", "psapi", "shell32"])
             self.cpp_info.components["td_tdcore"].system_libs.extend([crypt32, "ws2_32", mswsock])
